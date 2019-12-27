@@ -16,31 +16,6 @@
 
 **[Positive Prediction Case]**
 
-![](assets/markdown-img-paste-20191228010747.png)
-
-Log 내용
-
-```
-[model.py] Start Predicting~!
-[model.py] <<<  너무 기대를 많이해서 그런지 생각보다 그저 그랬어요.
-[model.py] Deleting Special Character..
-[model.py] >>>  너무 기대를 많이해서 그런지 생각보다 그저 그랬어요
-[model.py] Tockenization Special Character..
-[model.py] >>>  ['너무', '기대', '를', '많이', '해', '서', '그렇다', '생각', '보다', '그저', '그렇다']
-[model.py] Deleting Stopword..
-[model.py] >>>  [['너무', '기대', '많이', '해', '서', '그렇다', '생각', '보다', '그저', '그렇다']]
-[model.py] Loading tockenized data..
-[model.py] >>>  [[8, 264, 125, 425, 142, 73, 34, 2, 469, 73]]
-[model.py] Syncing array size..
-[model.py] >>>  [[  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
-    0   0   8 264 125 425 142  73  34   2 469  73]]
-[model.py] Preprocessing Done!
-[model.py] Predicting Done!: 0.2078140377998352 , Negative
-[app.py] 예측값:  0.2078140377998352 , 판단:  Negative
-```
-
-**[Negative Prediction Case]**
-
 ![](assets/markdown-img-paste-20191228010913.png)
 
 Log 내용
@@ -65,6 +40,30 @@ Log 내용
 [app.py] 예측값:  0.7022808790206909 , 판단:  Positive
 ```
 
+**[Negative Prediction Case]**
+
+![](assets/markdown-img-paste-20191228010747.png)
+
+Log 내용
+
+```
+[model.py] Start Predicting~!
+[model.py] <<<  너무 기대를 많이해서 그런지 생각보다 그저 그랬어요.
+[model.py] Deleting Special Character..
+[model.py] >>>  너무 기대를 많이해서 그런지 생각보다 그저 그랬어요
+[model.py] Tockenization Special Character..
+[model.py] >>>  ['너무', '기대', '를', '많이', '해', '서', '그렇다', '생각', '보다', '그저', '그렇다']
+[model.py] Deleting Stopword..
+[model.py] >>>  [['너무', '기대', '많이', '해', '서', '그렇다', '생각', '보다', '그저', '그렇다']]
+[model.py] Loading tockenized data..
+[model.py] >>>  [[8, 264, 125, 425, 142, 73, 34, 2, 469, 73]]
+[model.py] Syncing array size..
+[model.py] >>>  [[  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    0   0   8 264 125 425 142  73  34   2 469  73]]
+[model.py] Preprocessing Done!
+[model.py] Predicting Done!: 0.2078140377998352 , Negative
+[app.py] 예측값:  0.2078140377998352 , 판단:  Negative
+```
 
 ## 환경구성
 
